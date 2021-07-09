@@ -6,7 +6,7 @@
 //  Copyright © 2020 Sentera. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UITableViewHeaderFooterView {
     static var identifier: String {

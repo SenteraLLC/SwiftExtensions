@@ -15,7 +15,6 @@
 		84262F97229F1015006BD2A7 /* CAKeyframeAnimationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84262F96229F1015006BD2A7 /* CAKeyframeAnimationExtensions.swift */; };
 		843F7EB6241001BD00634F0D /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F7EB5241001BD00634F0D /* StringExtensionsTests.swift */; };
 		845A3753251D07B3008E48D9 /* UIBezierPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3752251D07B3008E48D9 /* UIBezierPathExtensions.swift */; };
-		84665CC824524D86003C8BE4 /* MKPointOfInterestCategoryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84665CC724524D86003C8BE4 /* MKPointOfInterestCategoryExtensions.swift */; };
 		847DFC8525795F3F001ED934 /* MKAnnotationViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFC8425795F3F001ED934 /* MKAnnotationViewExtensions.swift */; };
 		849A318E23EE1C0900112903 /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A318D23EE1C0900112903 /* UIAlertControllerExtensions.swift */; };
 		84AE6B5E24D8C2D700D580D9 /* UITableViewHeaderFooterViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE6B5D24D8C2D700D580D9 /* UITableViewHeaderFooterViewExtensions.swift */; };
@@ -91,7 +90,6 @@
 		84262F96229F1015006BD2A7 /* CAKeyframeAnimationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAKeyframeAnimationExtensions.swift; sourceTree = "<group>"; };
 		843F7EB5241001BD00634F0D /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		845A3752251D07B3008E48D9 /* UIBezierPathExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtensions.swift; sourceTree = "<group>"; };
-		84665CC724524D86003C8BE4 /* MKPointOfInterestCategoryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPointOfInterestCategoryExtensions.swift; sourceTree = "<group>"; };
 		847DFC8425795F3F001ED934 /* MKAnnotationViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKAnnotationViewExtensions.swift; sourceTree = "<group>"; };
 		849A318D23EE1C0900112903 /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
 		84AE6B5D24D8C2D700D580D9 /* UITableViewHeaderFooterViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterViewExtensions.swift; sourceTree = "<group>"; };
@@ -220,7 +218,6 @@
 				B296DF1E228B5C3E00640AB1 /* MKMapRectExtensionsTests.swift */,
 				B296DF21228B5C3E00640AB1 /* MKMapViewExtensions.swift */,
 				B260BB442314482E00D3CFA5 /* MKMultiPointExtensions.swift */,
-				84665CC724524D86003C8BE4 /* MKPointOfInterestCategoryExtensions.swift */,
 				B2AFE6BF22B7E8C600028267 /* MKPolygonExtensions.swift */,
 				B296DF25228B5C3E00640AB1 /* NotificationCenterAdditions.swift */,
 				17C36D9B24BF3BEF0033667B /* NotificationCenterAdditionsTests.swift */,
@@ -414,7 +411,6 @@
 				B296DF5E228B5C4000640AB1 /* CVPixelBufferExtensions.swift in Sources */,
 				B296DF55228B5C4000640AB1 /* UITableViewCellExtensions.swift in Sources */,
 				B296DF4A228B5C4000640AB1 /* CIContextExtensions.swift in Sources */,
-				84665CC824524D86003C8BE4 /* MKPointOfInterestCategoryExtensions.swift in Sources */,
 				B2DF06CD24F5BFA600F51134 /* ProcessInfoExtensions.swift in Sources */,
 				B296DF51228B5C4000640AB1 /* UICollectionViewCellExtensions.swift in Sources */,
 				1776361924042A1C00246A8E /* NSDictionaryExtensions.swift in Sources */,

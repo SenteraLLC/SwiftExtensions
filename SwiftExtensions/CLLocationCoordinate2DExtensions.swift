@@ -7,7 +7,6 @@
 //
 
 import CoreLocation
-import MapKit
 
 extension CLLocationDegrees {
 

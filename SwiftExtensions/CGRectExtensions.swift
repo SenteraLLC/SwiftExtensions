@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sentera. All rights reserved.
 //
 
-import Foundation
+import CoreGraphics
 
 public extension CGRect {
     func distanceFromCenter(to point: CGPoint) -> CGFloat {

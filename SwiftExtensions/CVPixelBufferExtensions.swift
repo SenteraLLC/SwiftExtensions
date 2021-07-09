@@ -6,7 +6,7 @@
 //  Copyright © 2018 Sentera. All rights reserved.
 //
 
-import Foundation
+import CoreVideo
 
 public extension CVPixelBuffer {
     /// Deep copy a CVPixelBuffer:

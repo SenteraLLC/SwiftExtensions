@@ -6,8 +6,8 @@
 //  Copyright © 2020 Sentera. All rights reserved.
 //
 
-import Foundation
 import MapKit
+import UIKit
 
 public extension UIAlertController {
     static func presentDrivingDirectionsActionSheet(to mapItem: MKMapItem,

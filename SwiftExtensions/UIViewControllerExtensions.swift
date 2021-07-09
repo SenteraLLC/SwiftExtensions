@@ -7,7 +7,6 @@
 //
 
 import AVKit
-import Foundation
 import SafariServices
 import UIKit
 

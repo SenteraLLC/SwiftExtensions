@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sentera. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UILayoutPriority {
     static let highestBreakable = UILayoutPriority(999.0)

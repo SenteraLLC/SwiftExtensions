@@ -6,7 +6,6 @@
 //  Copyright © 2017 Sentera. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public extension UITextField {

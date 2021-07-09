@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sentera. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UITableViewCell {
     static var identifier: String {

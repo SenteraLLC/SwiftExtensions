@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sentera. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UIButton {
     // swiftlint:disable override_in_extension

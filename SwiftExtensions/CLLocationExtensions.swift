@@ -7,7 +7,6 @@
 //
 
 import CoreLocation
-import Foundation
 
 public extension CLLocation {
     convenience init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance) {

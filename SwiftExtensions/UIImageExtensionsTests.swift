@@ -6,7 +6,7 @@
 //  Copyright © 2020 Sentera. All rights reserved.
 //
 
-import CoreFoundation
+import CoreServices
 import Foundation
 import SwiftExtensions
 import XCTest

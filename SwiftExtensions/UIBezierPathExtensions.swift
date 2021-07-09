@@ -7,7 +7,7 @@
 //
 //  Usurped this code from: https://stackoverflow.com/a/55690893/418497
 
-import Foundation
+import UIKit
 
 public extension UIBezierPath {
     /// Slightly modified from its original form to exclude adding a line

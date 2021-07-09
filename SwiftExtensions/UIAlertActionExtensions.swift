@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sentera. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UIAlertAction {
     static func defaultAction(title: String, handler: ((UIAlertAction) -> Void)? = nil) -> UIAlertAction {
