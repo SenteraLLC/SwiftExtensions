@@ -37,6 +37,18 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B296DEAE228B5B2B00640AB1"
+               BuildableName = "SwiftExtensionsTests.xctest"
+               BlueprintName = "SwiftExtensionsTests"
+               ReferencedContainer = "container:SwiftExtensions.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

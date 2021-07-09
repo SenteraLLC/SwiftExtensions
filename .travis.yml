@@ -1,0 +1,12 @@
+language: swift
+osx_image: xcode12.5
+xcode_project: SwiftExtensions.xcodeproj
+xcode_scheme: SwiftExtensions
+xcode_destination: platform=iOS Simulator,OS=14.4,name=iPhone 12 Pro
+
+before_install:
+  - brew install swiftlint
+
+notifications:
+  slack:
+    secure: DyVADMZapmlBYY4kitt3C2xHSgXJ0JisO4p37zqqQTrBFNiDYjGgaZJ+No4rcu4FimWwdx2UAvmo2lpkV5lZJSvbL/bOMICULOr32S0A91/uyBRPPCYnKz/ZbrYU9TjfwoLhUO8PFKpUMW5gvwfOGkoMj5tN4fO+LxRPa4qRCqobfRka2on+xAAkz5T2gyPjhcOIidHkUuegsU9S1+oWAPSIydRpaujE+b95t1/rZ+3NO8Ql2/PkSEXL/t9OQICmh3pmekGy8qXmQUE6yB7ex6rY/sJ0iPnUPG45Lbu/H61peqgLiTiSj4W7ngle8qPQYjP3Z8gh8e452ELMGNd/0ccys2v0JzbUwd75VL7lWfeYQjW7O8VAMqUg7U1veObAlYWmsM6X4KR2SAJENO1k9TZJs5dCFLLNz9JTqI/7noZ8bsbRzKsT2iBRkMu013Tw+L5LGrLeeJJmuc43qFKtmg7gMzv/N5JivTddCE09HIxwIHiV/p956/4L/tam8GNf5Q28OwB4NC9QofktEp3CN/zna3k/wl5R61hSTuM3LN025JYMhFjp2pWjBPvhKR1+oW1RZnl/ZJGeUe4fHvSz786a1aLMuHtEouI1eRgaOxWJPAS7Wc9vE8Lv1MC0ht5u1ntIFjrCP3oHxtJnBuNvuLgH2JR8v6zu5AGTPExCDHg=
