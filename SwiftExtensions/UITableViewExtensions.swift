@@ -21,7 +21,6 @@ public extension UITableView {
         }
 
         refreshControl.beginRefreshing()
-        refreshControl.sendActions(for: .valueChanged)
 
         let contentOffset = CGPoint(x: 0, y: -refreshControl.frame.height)
         setContentOffset(contentOffset, animated: true)
