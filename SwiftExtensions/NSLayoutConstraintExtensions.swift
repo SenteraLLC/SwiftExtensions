@@ -40,6 +40,10 @@ public extension NSLayoutConstraint {
         subview.centerYAnchor.constraint(equalTo: superview.centerYAnchor).isActive = true
     }
 
+    static func pinCenterY(view subview: UIView, inside superview: UIView) {
+        subview.centerYAnchor.constraint(equalTo: superview.centerYAnchor).isActive = true
+    }
+
     static func safePinBottom(of ofView: UIView, to toView: UIView, inset: CGFloat = 0.0) {
         let constraint = ofView.bottomAnchor.constraint(equalTo: toView.bottomAnchor, constant: -inset)
         constraint.priority = UILayoutPriority(999.9)
