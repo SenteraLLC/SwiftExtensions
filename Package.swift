@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "SwiftExtensions",
-            targets: ["SwiftExtensions"]),
+            targets: ["SwiftExtensions"])
     ],
     targets: [
         .target(
@@ -19,6 +19,6 @@ let package = Package(
         .testTarget(
             name: "SwiftExtensionsTests",
             dependencies: ["SwiftExtensions"],
-            path: "Tests"),
+            path: "Tests")
     ]
 )
