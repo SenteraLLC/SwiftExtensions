@@ -20,6 +20,10 @@ DerivedData
 *.xcuserstate
 *xcuserdata
 
+# Swift PM
+.swiftpm
+.build/
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
