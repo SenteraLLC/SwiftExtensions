@@ -6,6 +6,7 @@ before_install:
   - brew install swiftlint
 install: swift package update
 script:
+  - swiftlint --strict
   - xcodebuild clean build -sdk iphoneos -scheme $PROJECT_NAME
 notifications:
   slack:
