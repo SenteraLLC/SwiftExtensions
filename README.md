@@ -3,3 +3,11 @@
 # SwiftExtensions
 
 This is a collection of Swift extensions that are useful for any app or project.
+
+
+##Installation: Swift Package Manager
+
+Integrate `SwiftExtensions` into your iOS project using Swift Package Manager (requires Xcode 12+).
+
+In Xcode, select File > Swift Packages > Add Package Dependency.
+Follow the prompts using the Github URL for `SwiftExtensions` library with a minimum semantic version of v1.0.0.
