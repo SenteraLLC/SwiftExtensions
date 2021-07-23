@@ -19,16 +19,22 @@ extension CLLocationDegrees {
 }
 
 public extension CLLocationCoordinate2D {
-    func heading(to: CLLocationCoordinate2D) -> Double {
+    // http://www.remotebits.com/index.php/2017/12/17/how-to-calculate-compass-heading-from-gps-points/
+     func heading(to: CLLocationCoordinate2D) -> Double {
+         let heading = (450.0 - angle(to: to)).truncatingRemainder(dividingBy: 360.0)
+         if heading == 360.0 {
+             return 0.0
+         }
+         return heading
+     }
 
-        let lat1 = self.latitude.degToRad()
-        let lon1 = self.longitude.degToRad()
-
-        let lat2 = to.latitude.degToRad()
-        let lon2 = to.longitude.degToRad()
-
-        return atan2(lat2 - lat1, lon2 - lon1).radToDeg()
-    }
+    func angle(to: CLLocationCoordinate2D) -> Double {
+         let y1 = latitude
+         let x1 = longitude
+         let y2 = to.latitude
+         let x2 = to.longitude
+         return atan2(y2 - y1, x2 - x1).radToDeg()
+     }
 
     func isValid() -> Bool {
         if self == kCLLocationCoordinate2DInvalid {

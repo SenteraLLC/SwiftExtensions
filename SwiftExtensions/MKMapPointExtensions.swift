@@ -9,13 +9,22 @@
 import MapKit
 
 public extension MKMapPoint {
-    func heading(to: MKMapPoint) -> Double {
-        let y1 = self.y.degToRad()
-        let x1 = self.x.degToRad()
-        let y2 = to.y.degToRad()
-        let x2 = to.x.degToRad()
-        return atan2(y2 - y1, x2 - x1).radToDeg()
-    }
+    func angle(to: MKMapPoint) -> Double {
+         let y1 = y
+         let x1 = x
+         let y2 = to.y
+         let x2 = to.x
+         return atan2(y2 - y1, x2 - x1).radToDeg()
+     }
+
+     // http://www.remotebits.com/index.php/2017/12/17/how-to-calculate-compass-heading-from-gps-points/
+     func heading(to: MKMapPoint) -> Double {
+         let heading = (450.0 - angle(to: to)).truncatingRemainder(dividingBy: 360.0)
+         if heading == 360.0 {
+             return 0.0
+         }
+         return heading
+     }
 
     func isValid() -> Bool {
         coordinate.isValid()

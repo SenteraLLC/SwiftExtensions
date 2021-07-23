@@ -33,7 +33,7 @@ public extension NotificationCenter {
     static func addObserver(_ observer: Any, selector aSelector: Selector, name aName: NSNotification.Name?) {
         NotificationCenter.default.addObserver(observer, selector: aSelector, name: aName, object: nil)
     }
-    
+
     static func removeObserver(_ observer: Any, name aName: NSNotification.Name?) {
         NotificationCenter.default.removeObserver(observer, name: aName, object: nil)
     }
@@ -52,8 +52,8 @@ public extension NotificationCenter {
         }
     }
 
-    static func post(name aName: NSNotification.Name, object anObject: Any?) {
-        NotificationCenter.default.post(name: aName, object: anObject)
+    static func post(name aName: NSNotification.Name, object anObject: Any?, userInfo: [AnyHashable: Any]? = nil) {
+        NotificationCenter.default.post(name: aName, object: anObject, userInfo: userInfo)
     }
 
     static func postOnMainQueue(name aName: NSNotification.Name, object anObject: Any?, userInfo: [AnyHashable: Any]? = nil) {
@@ -66,3 +66,4 @@ public extension NotificationCenter {
         NotificationCenter.default.publisher(for: name)
     }
 }
+
