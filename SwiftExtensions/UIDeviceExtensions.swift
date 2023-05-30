@@ -100,6 +100,22 @@ public extension UIDevice {
         return mapToDevice(identifier: identifier)
     }()
 
+    /// Obtain the machine hardware platform from the `uname()` unix command
+    ///
+    /// Example of return values
+    ///  - `"iPhone8,1"` = iPhone 6s
+    ///  - `"iPad6,7"` = iPad Pro (12.9-inch)
+    static var utsName: String {
+
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        return machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+    }
+
     static let icon: UIImage = {
         UIDevice.current.userInterfaceIdiom == .pad ?
             (UIImage(systemName: "ipad") ?? UIImage()) :
